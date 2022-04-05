@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+body{
+    background: rgb(47,35,37);
+    background: linear-gradient(90deg, rgba(47,35,37,1) 0%, rgba(142,93,82,1) 100%);
+    padding: 0;
+    margin: 0;
+}
+
+ /* MENU */ 
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #FFF2E7;
+}
+#menu{
+    margin-right: 368px;
+}
+.menu-option{
+    font-family: 'Sarala', sans-serif;
+    margin-right: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+#logo{
+    margin-left: 368px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    width: 62px;
+    height: 62px;
+}
+#logo img{
+    width: 62px;
+    height: 62px; 
+}
+
+ /* CONTEUDO DA PÁGINA */ 
+ #container {
+    display: flex;
+    flex-direction: column;
+    
+ }
+ #bot-info{
+    display: flex;
+    flex-direction: row;
+    
+ }
+ #bot-title{
+    font-family: 'Righteous', cursive;
+    color: #FFF;
+    font-size: 64px;
+    margin-top: 94px;
+    margin-left: 368px;
+    margin-bottom: 32px;
+ }
+ #bot-description{
+    font-family: 'Sarala', sans-serif;
+    color: #FFF;
+    font-size: 24px;
+    margin-left: 368px;
+ }
+ #btn-add{
+    width: 185px;
+    height: 62px;
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-size: 24px;
+    color: #000;
+    background-color: #ECD6C4;
+    border: none;
+    outline:none;
+    margin-left: 368px;
+}
+#btn-add:hover{
+    background-color: red;
+}
+#bot-img{
+    position: absolute;
+    left: 60.99%;
+    right: 18.48%;
+    top: 8.73%;
+    bottom: 52.24%;
+}
+/* FUNCIONALIDADES DO BOT */
+#bot-functions{
+    margin-top: 50px; 
+}
+#bot-functions hr{
+    color: #FFF2E7;
+    width: 267px;
+    margin-bottom: 31px;
+}
+#bot-functions h1{
+    font-family: 'Righteous', cursive;
+    font-weight:normal;
+    text-align: center;
+    color: #FFF;
+}
+#bot-functions p{
+    font-family: 'Sarala', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #FFF;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #FFF2E7;
+	margin-top: 100px;
+	width:100%;
+}
+footer img{
+    margin-top: 30px;
+}
+/* RESPONSIVIDADE */
+@media (max-width:320px) {
+    body{ 
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #bot-img{
+        width: 20px;
+        margin: 0;
+        position: static;
+    }
+    #bot-img img{
+        width: 200px;
+    }
+    #logo{
+        margin: 0;
+        padding: 0;
+    }
+    #menu{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #menu-option{
+        margin-bottom: 5px;
+        padding: 0;
+        
+    }
+    #bot-info{
+        display: flex;
+        flex-direction: column;
+    }
+    #bot-title{
+        margin-top: 10px;;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 30px;
+        text-align: center;
+
+    }
+    #bot-description{
+        margin: 0;
+    }
+    #btn-add{
+        margin: 0;
+    }
+    #bot-functions hr{
+        width: 50%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    footer img{
+        width: 100%;
+    }
+}
